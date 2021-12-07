@@ -1,0 +1,560 @@
+@font-face{
+	font-family: "PT Sans Caption" ;
+	src: url('fonts/PTSansCaption-Bold.ttf');
+}
+
+body{
+	width: 80%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 3px;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-style: italic;
+
+	
+}
+
+
+.navegacion{
+	font-family: 'PT Sans Caption', sans-serif;
+	background-color: #121822;
+	/*background-color: rgba(0, 0, 0, 0.7);*/
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1 ;
+	grid-column-end: 5 ;
+	position: sticky;
+	top: 0;
+	z-index: 9;
+
+}
+
+.menu a:link, .menu a:visited, .menu a:active{
+	text-decoration: none;
+	color:rgb(253, 73, 88);
+}
+
+.menu a:hover{
+	font-size: 1.5rem;
+}
+
+.menu ul li{
+	display: inline;
+}
+
+.menu{
+	list-style-type: none;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 3px;
+}
+
+
+
+/*VALORANT*/
+header{
+	background-color: hsla(0, 100%, 53%, 0.7);
+	font-family: 'PT Sans Caption', sans-serif;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 3px;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1 ;
+	grid-column-end: 5 ;
+	z-index: 8;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'PT Sans Caption', sans-serif;
+}
+
+h4{
+	color: hsla(0, 100%, 53%, 0.7);
+}
+
+
+
+#izquierda{
+	background-color: #121822;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	border-radius: 30px;
+	padding-bottom: 0px;
+	color: white;
+}
+
+#izquierda p{
+	padding:0px 50px 0px 50px;
+}
+
+#izquierda h2{
+	margin-bottom: 50px;
+}
+
+#izquierda h2+img{
+	margin-bottom: 50px;
+}
+
+#izquierda img+p{
+	margin-bottom: 50px;
+}
+
+#izquierda p+iframe{
+	margin-bottom: 50px;
+}
+
+
+#centro{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	padding: 20%;
+	
+	
+
+}
+
+#derecha{
+	background-color: #121822;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 4;
+	grid-column-end: 6;
+	color: white;
+	border-radius: 30px;
+	padding-bottom: 0px;
+	color: white;
+}
+
+#derecha p{
+	padding:0px 50px 0px 50px;
+}
+
+#derecha h2{
+	margin-top: 120px;
+}
+
+#derecha h3+p{
+	margin-bottom: 100px;
+}
+
+#derecha iframe{
+	margin-top: 20px;
+}
+
+
+#izquierda1{
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	
+
+}
+
+#centro1{
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	padding-top: 10%;
+	margin-top: -100px;
+
+}
+
+#centro1 h2+iframe{
+	margin: 4rem;
+}
+
+
+#derecha1{
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 4;
+	grid-column-end: 5;
+	
+
+}
+
+footer{
+	background-color: rgba(18, 24, 34, 1);
+	color: rgba(253, 73, 88, 1);
+	grid-row-start: 5;
+	grid-row-end: 6;
+	grid-column-start: 1 ;
+	grid-column-end: 5 ;
+
+}
+
+#nombre{
+	font-family: 'PT Sans Caption', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+
+iframe{
+	width: 480px;
+	height: 270px;
+}
+
+
+
+/*SOPORTE*/
+
+#textoSoporteD{
+	position: absolute;
+	width: 400px;
+	top: 250px;
+	right: 190px;
+	height: 630px;
+	z-index: 3;
+	background-image: url('videos/killjoy.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+	margin: -126px 0px 0px 0px;
+	z-index: 0;
+}
+
+
+#textoSoporteI{
+	position: absolute;
+	width: 400px;
+	top: 250px;
+	left: 190px;
+	height: 630px;
+	z-index: 2;
+	background-image: url('videos/kj2.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+	margin: -167px 0px 0px 0px;
+	z-index: 0;
+}
+
+#textoSoporteI h1{
+	font-size: 0px;
+}
+
+#textoSoporteD P{
+	font-size: 0px;
+}
+
+#formulario{
+	position: absolute;
+	width: 700px;
+	top: 260px;
+	height: 525px;
+	left: 600px;
+	right: 200px;
+	z-index: 4;
+	border-radius: 10px;
+	color: white;
+	background-color: #121822;
+	justify-content: center;
+}
+
+fieldset{
+	margin: 20px 0px 0px 0px;
+}
+
+
+#pieSoporte{
+	bottom: auto;
+	z-index: 4;
+	position: absolute;
+	top: 800px ;
+	height: 40px;
+	width: 1525px;
+}
+
+
+#formulario form table{
+	justify-content: center;
+}
+
+
+/*ENVIAR*/
+
+#enlaceFormulario a:link,#enlaceFormulario a:visited,#enlaceFormulario a:active{
+	color: rgb(253, 73, 88);
+	text-decoration: none;
+}
+
+#enlaceFormulario a:hover{
+	font-size: 1.3em;
+}
+
+#enviado{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 3px;
+
+}
+
+#enviadoK{
+	grid-row-start: 1;
+	grid-row-end: 4;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	margin: 20px 0px 20px 380px;
+	
+}
+
+#textoE{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 4;
+	grid-column-end: 6;
+	font-size: 30px;
+	margin-left: 50px;
+}
+
+#enlaceFormulario{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 4;
+	grid-column-end: 6;
+	font-size: 1.2em;
+	margin-left: 50px;
+}
+
+#enviado h1{
+	font-size: 0px;
+}
+
+
+
+
+
+/*VÍDEOS COMUNIDAD*/
+
+#contenedorComunidad{
+    /*text-align: center;*/
+    color: rgb(18, 24, 34);
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-row-start:3 ;
+    grid-row-end:4 ;
+    grid-column-start: 1;
+    grid-column-end:5 ;
+
+}
+
+.audioComunidad{
+	flex: 100%;
+	padding: 30px;
+
+}
+
+.videosComunidad{
+	flex: 30%;
+	padding: 0.5em;
+
+}
+
+
+
+/*COMPETITIVO*/
+
+#clasificacion h1{
+	font-size: 0px;
+}
+
+#infoCompeti{
+	margin: 50px 10px 50px 10px ;
+	float: left;
+	border-radius: 30px;
+	padding-bottom: 0px;
+	color: white;
+	width: 600px ;
+	height: 920px;
+	background-image: url(videos/fondo.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#infoCompeti p{
+	font-size: 0px;
+
+}
+
+#infoCompeti2{
+	margin: 50px 10px 50px 10px ;
+	background-color: red;
+	float: right;
+	height: 850px;
+	width: 420px;
+	padding: 80px 50px 0px 50px;
+	background-color: #121822;
+	border-radius: 30px;
+	padding-bottom: 0px;
+	color: white;
+}
+
+
+
+#clasificacion table{
+	margin: 50px 10px 50px 10px ;
+	width: 800px;
+	height: 500px;
+	background-image: url('images/fondoTabla.jpeg');
+
+
+}
+
+#gambit li{
+	list-style-image: url('images/logoGambit0.png');
+}
+
+#teamLiquid li{
+	list-style-image: url('images/logoTeamLiquid0.png');
+
+}
+
+#acend li{
+	list-style-image: url('images/logoAcend0.png');
+}
+
+#giantsGaming li{
+	list-style-image: url('images/logoGiantsGaming0.png');
+}
+
+#G2 li{
+	list-style-image: url('images/logoG20.png');
+}
+
+#sentinels li{ 
+	list-style-image: url('images/logoSentinels0.png');
+}
+
+#cloud9 li{
+	list-style-image: url('images/logoCloud90.png');
+}
+
+#envy li{
+	list-style-image: url('images/logoenvy0.png');
+}
+
+#Thieves li{
+	list-style-image: url('images/logo100Thieves0.png');
+}
+
+#rise li{
+	list-style-image: url('images/logoRise0.png');
+}
+
+#visionStrikers li{
+	list-style-image: url('images/logoVisionStrikers0.png');
+}
+
+#damwon li{
+	list-style-image: url('images/logoDamwon0.png');
+}
+
+#tnl li{
+	list-style-image: url('images/logoTNL0.png');
+}
+
+#vvs li{
+	list-style-image: url('images/logoVVS0.png');
+}
+
+#worldGameStar li{
+	list-style-image: url('images/logoWorldGameStar0.png');
+}
+
+#keydStars li{
+	list-style-image: url('images/logoKeydStars0.png');
+}
+
+#furia li{
+	list-style-image: url('images/logoFuria0.png');
+}
+
+#teamVikings li{
+	list-style-image: url('images/logoTeamVikings0.png');
+}
+
+#havanLiberty li{
+	list-style-image: url('images/logoHavanLiberty0.png');
+}
+
+#gamelandersBlue li{
+	list-style-image: url('images/logoGamelandersBlue0.png');
+}
+
+td,th{
+	border: 3px solid white;
+	border-collapse: collapse;
+}
+
+#clasificacion a:link, #clasificacion a:visited, #clasificacion a:active{
+	text-decoration: none;
+	color: #121822;
+}
+
+
+ 
+
+/*PARCHES*/
+
+.fila{
+	display: table-row;
+	
+}
+
+.columna{
+	display: table-cell;
+	padding: 30px 40px 40px 10px;
+
+}
+
+.videoSoporte{
+	display: table-cell;
+	padding: 50px 20px 0px 20px;
+
+
+}
+
+
+#contenedorParches{
+	display: table;
+}
+
+.titulo{
+	font-size: 0px;
+}
+
+#tituloSeccion{
+	font-size: 20px;
+	background-color: red;
+	width: 100%;
+	display: table-cell;
+	text-align: center;
+
+}
+
+
+
